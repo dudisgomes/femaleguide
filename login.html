@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" href="css/login.css">
+    <title>Login!</title>
+	
+</head>
+<body>
+
+   <header>
+   <center>
+   <h1>YOUR FEMALE GUIDE</h1>
+   
+   <nav>
+	<ul>
+	  <li><a href='index.html'>Página inicial</a></li>
+	</ul>
+   </nav>
+    </center>
+   </header>
+   <main>
+    <center>
+   <form action="/login.php" method="post">
+  
+  <p>
+   <form action="nome">Nome:</label>
+   <input type="text" name="nome" id="nome" maxlength="15" pattern="[aA-zZ\s]+$" required>
+  </p>
+  
+  <p>
+   <form action="sobrenome">Sobrenome:</label>
+   <input type="text" name="sobrenome" id="sobrenome" maxlength="15" pattern="[aA-zZ\s]+$" required>
+  </p>
+  
+  <p>
+   <label for="data">Data de nascimento</label>
+   <input type="data" name="data" id="data" maxlength="10" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}$" required>
+  </p>
+  
+  <p>
+   <label for="email">Insira seu email:</label>
+   <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+  </p>
+  
+  <p>
+   <label for="password">Insira sua senha:</label>   
+   <input type="password" name="password" id="password" minlength="8" required>
+  </p>
+  
+  <p>
+  <input id="contrato" name="contrato" type="checkbox" value="sim">
+  <label for="contrato">Aceito os termos do contrato.</label>
+  </p>
+  <input type="submit" value="Entrar">
+  </form>
+  
+  </center>
+  </main>
+
+<footer>Site Your Female Guide - Por Eduarda Gomes</footer>
+   
+</body>
+</html>   
